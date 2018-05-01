@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="managers\**" />
+    <Compile Remove="old\**" />
+    <EmbeddedResource Remove="managers\**" />
+    <EmbeddedResource Remove="old\**" />
+    <None Remove="managers\**" />
+    <None Remove="old\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="controllers\DataGetterController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AE.Net.Mail" Version="1.7.10" />
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="Google.Apis.Gmail.v1" Version="1.32.2.1173" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.2" />
+    <PackageReference Include="Microsoft.Office.Interop.Outlook" Version="15.0.4797.1003" />
+    <PackageReference Include="MySql.Data" Version="6.10.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="client_secret.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Desktop\send-actionable-message-master\send-actionable-message.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="components\visitors\" />
+  </ItemGroup>
+
+</Project>
