@@ -1,4 +1,0 @@
-C:\Users\JOEY\Source\Repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.0\Jobster.csprojResolveAssemblyReference.cache
-C:\Users\JOEY\Source\Repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.0\Jobster.csproj.CoreCompileInputs.cache
-C:\Users\JOEY\Source\Repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.0\Jobster.AssemblyInfoInputs.cache
-C:\Users\JOEY\Source\Repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.0\Jobster.AssemblyInfo.cs
